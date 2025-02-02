@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLY</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        @font-face {
+            font-family: 'plex';
+            src: url('plex.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            font-family: 'plex', sans-serif;
+            position: relative;
+        }
+
+        #bottom-left-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 22px;
+            letter-spacing: 0.05em;
+            line-height: 1.7;
+            color: #000;
+        }
+
+        .faded {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        #centered-image {
+            max-width: 300px;
+            height: auto;
+        }
+
+        /* Apply a softer rendering to the font */
+        #bottom-left-text {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+    <img id="centered-image" src="V1.png" alt="Centered Image">
+    <div id="bottom-left-text">
+        SPLY<br>
+        YZY BOX ONE TEE<br>
+        BLACK <span class="faded">WHITE</span><br>
+        AVAILABLE AT THE UNITED CENTER<br>
+        GET TICKETS NOW
+    </div>
+</body>
+</html>
